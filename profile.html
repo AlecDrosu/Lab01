@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alec Drosu</title>
+		<link rel="stylesheet" type="text/css" href="./profile.css" />
+	</head>
+	<body class="page">
+		<header class="header">
+			<canvas id="snow"></canvas>
+			<a class="return" href="./index.html">Go Back</a>
+			<div class="dropdown">
+				<button class="menu__open">☰ Menu</button>
+				<div class="dropdown__menu dropdown__menu_active">
+					<l1><a href="#introduction" class="menu__item">Introduction</a></l1>
+					<l1><a href="#hobbies" class="menu__item">Hobbies</a></l1>
+					<l1><a href="#contact" class="menu__item">Contact</a></l1>
+				</div>
+			</div>
+			<button class="snow__active">Let it Snow!!</button>
+		</header>
+		<main class="main">
+			<section id="introduction">
+				<img class="introduction__image" src="./images/ProfilePic.JPG" alt="" />
+				<h1 class="introduction__name">Hi There! <span class="wave">👋</span> I'm Alec</h1>
+				<div class="introduction__links">
+					<a href="https://github.com/AlecDrosu" class="link">
+						<img
+							class="links github"
+							src="./images/github.png"
+							alt=""
+							style="margin-bottom: -10px"
+						/>
+					</a>
+					<a href="https://www.linkedin.com/in/alec-drosu/" class="link">
+						<img
+							class="links linkedIn"
+							src="./images/Linkedin-logo-on-transparent-Background-PNG-.png"
+							alt=""
+							style="margin-bottom: -15px"
+						/>
+					</a>
+					<a href="./Alec Drosu Resume.pdf" class="links link">Resume</a>
+				</div>
+				<div class="about">About Me:</div>
+				<p class="about_des">
+					I am an Aerospace Engineering student at Gatech, but I LOVE fullstack
+					development, and want to purse software engineering as a career.
+					Besides fullstack, I have some experience with machine learning and
+					neural networks. I am currently working on a project that combines the
+					two to optimize the fins of a rocket. (You can check it out
+					<a class="ml-link" href="https://github.com/JadenMcElvey/AutoRASAero"
+						>here</a
+					>). I want to go to graduate school for machine learning.
+				</p>
+				<div class="about">Education:</div>
+				<p class="about_des">
+					I transffered from CU Boulder in 2022 with a major in aerospace
+					engineering.
+				</p>
+			</section>
+			<section id="hobbies">
+				<h2 class="hobby__title">Hobbies:</h2>
+				<div class="hobby__list">
+					<div class="hobby">
+						<img
+							src="./images/junKitty.jpg"
+							alt=""
+							class="hobby__img slide-in left"
+						/>
+						<div class="hobby__box slide-in right">
+							<h3 class="hobby__name">Climbing</h3>
+							<p class="hobby__description">
+								Climbing is my favorite hobby at Gatech, I am trying to go every
+								other day but I have a bad habit of getting injured so I'm
+								holding off on that. (If Any TAs want to go climb at stone
+								summit midtown HMU)
+							</p>
+						</div>
+					</div>
+					<div class="hobby">
+						<img
+							src="./images/junKitty.jpg"
+							alt=""
+							class="hobby__img slide-in left"
+						/>
+						<div class="hobby__box slide-in right">
+							<h3 class="hobby__name">Chess</h3>
+							<p class="hobby__description">
+								Chess is definetely one of my favorite hobbies. I transffered
+								from CU Boulder, and playing with all my friends at a coffee
+								shop until closing was the hardest thing to leave behind.
+							</p>
+						</div>
+					</div>
+					<div class="hobby">
+						<img
+							src="./images/junKitty.jpg"
+							alt=""
+							class="hobby__img slide-in left"
+						/>
+						<div class="hobby__box slide-in right">
+							<h3 class="hobby__name">Flying</h3>
+							<p class="hobby__description">
+								I love to fly, I am working on my instrument rating currently.
+								If I did not want to go into software, I would have joined to
+								air force. (If I don't get a good job out of college I still
+								might XD). Even without the military though, I will still
+								continue to get every rating up to commercial level. (Pilots get
+								paid a LOT so it's a good backup)
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact">
+				<h2 class="contact__title">Contact Me</h2>
+				<div class="contact__box">
+					<div class="contact">
+						<p class="contact__info">Personal Email:</p>
+						<p class="contact__des">drosualec@gmail.com</p>
+					</div>
+					<div class="contact">
+						<p class="contact__info">School Email:</p>
+						<p class="contact__des">adrosu3@gatech.edu</p>
+					</div>
+					<div class="contact">
+						<p class="contact__info">Phone Number:</p>
+						<p class="contact__des">714-477-3450</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="profile.js" type="text/javascript"></script>
+	</body>
+</html>

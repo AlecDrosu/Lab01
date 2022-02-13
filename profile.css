@@ -1,0 +1,272 @@
+html {
+	background: #1a1a1c;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.main {
+	margin-top: 590px;
+	color: white;
+}
+
+.introduction {
+	width: 100%;
+	height: 100%;
+}
+
+#snow {
+	background-image: url("./images/rockyMountains.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	object-position: left;
+	width: 100%;
+	margin: 0px;
+	height: 590px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.return {
+	position: fixed;
+	left: 20px;
+	top: 10px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.return:hover {
+	color: lightblue;
+}
+
+.snow__active {
+	margin-top: 50px;
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.8);
+	border: none;
+	font-size: 25px;
+	height: 25px;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.snow__active:hover {
+	text-shadow: 0 0 10px #fff;
+	color: white;
+}
+
+#introduction {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.introduction__name {
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 60px;
+}
+
+.introduction__image {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	object-position: top;
+	margin-top: -200px;
+	z-index: 1;
+    border-radius: 30px;
+    border:rgba(0, 0, 0, 0.5) solid 5px;
+}
+
+.link {
+	padding: 0 120px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	height: 25px;
+	cursor: pointer;
+}
+
+/* make the links move up and down when hovering over them */
+.links {
+	position: relative;
+	top: 0;
+	transition: top ease 0.25s;
+}
+
+.links:hover {
+	top: -10px;
+}
+
+.github {
+	width: 80px;
+}
+
+.linkedIn {
+	width: 40px;
+}
+
+.about {
+	font-size: 30px;
+	padding-top: 60px;
+}
+
+.about_des {
+	width: 50%;
+}
+
+.ml-link {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	height: 25px;
+	cursor: pointer;
+}
+
+.ml-link:hover {
+	color: lightblue;
+	text-decoration: none;
+}
+
+#hobbies {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 150px;
+}
+
+.hobby__img {
+	height: 250px;
+	width: 250px;
+	padding-right: 50px;
+	object-fit: cover;
+}
+
+.hobby {
+	display: flex;
+	padding: 40px;
+	align-items: center;
+}
+
+.hobby__description {
+	width: 450px;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 150px;
+    text-align: center;
+}
+
+.contact__box {
+	display: flex;
+    text-align: center;
+}
+
+.contact {
+	padding: 10px 6vw;
+    text-align: center;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin-left: 94.3%;
+}
+
+.dropdown__menu {
+	position: absolute;
+	right: 15px;
+	top: calc(100% + 0.25rem);
+	background-color: #1a1a1c;
+	color: white;
+	border-radius: 5px;
+	padding: 0.5rem 0.5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+	transform: translateY(-10px);
+}
+
+.menu__item {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.dropdown__menu_active {
+	opacity: 1;
+	transform: translateY(0px);
+	pointer-events: auto;
+}
+
+.menu__open {
+	margin-right: 20px;
+	border: none;
+	color: white;
+	background-color: transparent;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.menu__open:hover {
+	text-shadow: 0 0 10px #fff;
+}
+
+.menu__item:hover {
+	color: lightblue;
+	text-shadow: 0 0 6px #fff;
+}
+
+.wave {
+	animation-name: wave-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	transform-origin: 70% 70%;
+	display: inline-block;
+}
