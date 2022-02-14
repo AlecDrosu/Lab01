@@ -5,8 +5,8 @@ const ctx = snow.getContext("2d");
 const particles = 300;
 const particlesArray = [];
 
-const width = (snow.width = window.innerWidth);
-const height = (snow.height = window.innerHeight);
+let width = (snow.width = window.innerWidth);
+let height = (snow.height = window.innerHeight);
 
 const letItSnow = document.querySelector(".snow__active");
 
