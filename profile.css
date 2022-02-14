@@ -218,7 +218,7 @@ html {
 .dropdown {
 	position: relative;
 	display: inline-block;
-	margin-left: 94.3%;
+	margin-left: 92.3%;
 }
 
 .dropdown__menu {
@@ -253,7 +253,7 @@ html {
 	border: none;
 	color: white;
 	background-color: transparent;
-	font-size: 20px;
+	font-size: 30px;
 	cursor: pointer;
 }
 
