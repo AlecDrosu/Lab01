@@ -18,7 +18,7 @@ function createParticles() {
 			y: Math.random() * height,
 			radius: Math.random() * 3 + 1,
 			vx: -1 + Math.random() * 4,
-			vy: -1 + Math.random() * 6,
+			vy: -1 + Math.random() * 10,
 			speed: Math.random(),
 		};
 		particlesArray.push(particle);
