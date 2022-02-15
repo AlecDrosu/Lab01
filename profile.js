@@ -103,7 +103,7 @@ function updateSnowFall() {
 letItSnow.addEventListener("click", createParticles);
 draw();
 updateSnowFall();
-window.addEventListener("mousemove", mouseMove);
+snow.addEventListener("mousemove", mouseMove);
 // window.addEventListener("mouseleave", mouseLeave);
 
 // ############################# Menu Items #############################
