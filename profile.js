@@ -10,7 +10,6 @@ let height = (snow.height = window.innerHeight);
 
 const letItSnow = document.querySelector(".snow__active");
 
-// make the function createParticles create new particles fall from the top constantly\
 function createParticles() {
 	for (let i = 0; i < particles; i++) {
 		const particle = {
@@ -25,7 +24,6 @@ function createParticles() {
 	}
 }
 
-// write a function that will draw the snow on the screen. the snow particles should be perfect circles regardless of screen size
 function draw() {
 	ctx.clearRect(0, 0, width, height);
 	ctx.fillStyle = "white";
@@ -47,7 +45,6 @@ function resize() {
 
 window.addEventListener("resize", resize);
 
-// create a function that will move the snow. Snow should fall from the top, and new snow should be created when it reaches the bottom of the screen
 function moveSnow() {
 	for (let i = 0; i < particlesArray.length; i++) {
 		const p = particlesArray[i];
@@ -69,6 +66,34 @@ function moveSnow() {
 	}
 }
 
+// function mouseLeave() {
+// 	for (let i = 0; i < particlesArray.length; i++) {
+// 		const p = particlesArray[i];
+// 		p.x = Math.random() * width;
+// 		p.y = Math.random() * height;
+// 	}
+// }
+
+function mouseMove(e) {
+	const mx = e.clientX;
+	const my = e.clientY + 120;
+	for (let i = 0; i < particlesArray.length; i++) {
+		const p = particlesArray[i];
+		const dx = mx - p.x;
+		const dy = my - p.y;
+		const distance = Math.sqrt(dx * dx + dy * dy);
+		const minDist = 100;
+		const pull = -0.5;
+		if (distance < minDist) {
+			const angle = Math.atan2(dy, dx);
+			const tx = p.x + Math.cos(angle) * (minDist - distance) * pull;
+			const ty = p.y + Math.sin(angle) * (minDist - distance) * pull;
+			p.x = tx;
+			p.y = ty;
+		}
+	}
+}
+
 function updateSnowFall() {
 	moveSnow();
 	draw();
@@ -78,6 +103,8 @@ function updateSnowFall() {
 letItSnow.addEventListener("click", createParticles);
 draw();
 updateSnowFall();
+window.addEventListener("mousemove", mouseMove);
+// window.addEventListener("mouseleave", mouseLeave);
 
 // ############################# Menu Items #############################
 
