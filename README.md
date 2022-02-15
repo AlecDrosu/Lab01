@@ -5,3 +5,7 @@ Hello, this is the finished first lab. I hope you enjoy it! I tried to make a pe
 ## Github Pages
 
 https://alecdrosu.github.io/Lab01/
+
+## Remarks
+
+To the TA reading this, if there are any problems with my zip folder, the github pages works. Also my github account has the Lab-1 repository.
