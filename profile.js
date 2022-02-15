@@ -103,7 +103,8 @@ function updateSnowFall() {
 letItSnow.addEventListener("click", createParticles);
 draw();
 updateSnowFall();
-snow.addEventListener("mousemove", mouseMove);
+// fix mouseMove so it actually tracks the mouse and nothing else
+window.addEventListener("mousemove", mouseMove);
 // window.addEventListener("mouseleave", mouseLeave);
 
 // ############################# Menu Items #############################
